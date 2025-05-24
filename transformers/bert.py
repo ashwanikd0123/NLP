@@ -76,17 +76,17 @@ def pos_encoding(n: int, e: int):
     return res
 
 class Bert(nn.Module):
-    def __init__(self, vocab_size: int, embed_size: int, max_len: int, h: int = 6, encoder_count: int = 6):
+    def __init__(self, embed_size: int, h: int = 6, encoder_count: int = 6):
         super().__init__()
-        self.embedding = nn.Embedding(vocab_size, embed_size)
-        self.pos_encoding = pos_encoding(max_len, embed_size)
+        self.embed_size = embed_size
         self.encoder_layers = nn.ModuleList([EncoderLayer(embed_size, h) for _ in range(encoder_count)])
-        self.linear = nn.Linear(embed_size, vocab_size)
 
-    def forward(self, x: torch.tensor, mask: torch.tensor):
-        res = self.embedding(x) + self.pos_encoding.unsqueeze(0).repeat(x.shape[0], 1, 1)
-        mask = mask.unsqueeze(2).repeat(1, 1, res.shape[1])
+    def forward(self, x: torch.tensor, mask: torch.tensor = None):
+        seq_len = x.size(1)
+        pe = pos_encoding(seq_len, self.embed_size).unsqueeze(0).repeat(x.shape[0], 1, 1)
+        res = x + pe
+        if mask is not None:
+            mask = mask.unsqueeze(2).repeat(1, 1, seq_len)
         for encoder in self.encoder_layers:
             res = encoder(res, mask)
-        res = self.linear(res)
         return res

@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97b04ab8-8d24-454b-bbc4-ed1d91928bca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/NLP.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="97b04ab8-8d24-454b-bbc4-ed1d91928bca" name="Changes" comment="initial commit">
       <change afterPath="$PROJECT_DIR$/testing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transformers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transformers/bert.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transformers/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transformers/bert.py" beforeDir="false" afterPath="$PROJECT_DIR$/transformers/bert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transformers/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/transformers/tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ashwanikd0123"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ashwanikd0123/NLP.git",
+    "accountId": "e48d6e96-00d9-47bf-b83f-6a29c96130d2"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 4
 }]]></component>
@@ -44,6 +50,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python tests.Python tests for tests.TestBert.executor": "Run",
     "Python tests.Python tests for tests.TestBert.test_attention_shape.executor": "Run",
+    "Python tests.Python tests in tests.py.executor": "Run",
     "Python.testing.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -56,7 +63,7 @@
       <recent name="D:\Artificial Intelligence\PyCharmProjects\NLP\transformers" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for tests.TestBert">
+  <component name="RunManager" selected="Python tests.Python tests in tests.py">
     <configuration name="testing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NLP" />
       <option name="ENV_FILES" value="" />
@@ -109,8 +116,24 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in tests.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="NLP" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/transformers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/transformers/tests.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests in tests.py" />
         <item itemvalue="Python tests.Python tests for tests.TestBert" />
         <item itemvalue="Python tests.Python tests for tests.TestBert.test_attention_shape" />
         <item itemvalue="Python.testing" />
@@ -132,6 +155,19 @@
       <option name="presentableId" value="Default" />
       <updated>1748107285310</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1748108903882</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1748108903882</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
 </project>

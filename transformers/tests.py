@@ -56,11 +56,47 @@ class TestBert(unittest.TestCase):
         self.assertEqual(out_masked.shape, x.shape)
         self.assertFalse(torch.any(torch.isnan(out_masked)))
 
-    def test_bert(self):
-        model = Bert(self.vocab_size, self.embed_size, self.max_words, self.h, self.encoder_count)
-        out = model(self.input, self.mask)
-        self.assertEqual(out.shape, (self.batch_size, self.max_words, self.vocab_size))
-        self.assertFalse(torch.any(torch.isnan(out)))
+class TestBertEncoder(unittest.TestCase):
+    def setUp(self):
+        self.batch_size = 4
+        self.seq_len = 16
+        self.embed_size = 64
+        self.h = 4
+        self.encoder_count = 3
+        self.model = Bert(embed_size=self.embed_size, h=self.h, encoder_count=self.encoder_count)
+
+    def test_output_shape(self):
+        x = torch.rand(self.batch_size, self.seq_len, self.embed_size)
+        out = self.model(x)
+        self.assertEqual(out.shape, x.shape)
+
+    def test_no_nan_in_output(self):
+        x = torch.rand(self.batch_size, self.seq_len, self.embed_size)
+        out = self.model(x)
+        self.assertFalse(torch.isnan(out).any(), "Output contains NaNs")
+
+    def test_masked_input_shape_and_nan(self):
+        x = torch.rand(self.batch_size, self.seq_len, self.embed_size)
+        mask = torch.randint(0, 2, (self.batch_size, self.seq_len))
+        out = self.model(x, mask)
+        self.assertEqual(out.shape, x.shape)
+        self.assertFalse(torch.isnan(out).any(), "Masked output contains NaNs")
+
+    def test_varying_sequence_lengths(self):
+        for seq_len in [8, 32, 64]:
+            x = torch.rand(self.batch_size, seq_len, self.embed_size)
+            out = self.model(x)
+            self.assertEqual(out.shape, x.shape)
+            self.assertFalse(torch.isnan(out).any(), f"Output contains NaNs at seq_len={seq_len}")
+
+    def test_gradients_flow(self):
+        x = torch.rand(self.batch_size, self.seq_len, self.embed_size, requires_grad=True)
+        out = self.model(x)
+        loss = out.sum()
+        loss.backward()
+        self.assertIsNotNone(x.grad)
+        self.assertFalse(torch.isnan(x.grad).any(), "Gradients contain NaNs")
+
 
 if __name__ == "__main__":
     unittest.main()
