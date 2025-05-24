@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97b04ab8-8d24-454b-bbc4-ed1d91928bca" name="Changes" comment="initial commit">
+    <list default="true" id="97b04ab8-8d24-454b-bbc4-ed1d91928bca" name="Changes" comment="modular structure to give user independence to choose embedding and output layer">
       <change afterPath="$PROJECT_DIR$/testing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transformers/bert.py" beforeDir="false" afterPath="$PROJECT_DIR$/transformers/bert.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transformers/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/transformers/tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,33 +83,33 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for tests.TestBert" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for mytransformers.tests.TestBert" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="NLP" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/transformers" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mytransformers" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.TestBert&quot;" />
+      <option name="_new_target" value="&quot;mytransformers.tests.TestBert&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for tests.TestBert.test_attention_shape" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for mytransformers.tests.TestBert" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="NLP" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/transformers" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mytransformers" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.TestBert.test_attention_shape&quot;" />
+      <option name="_new_target" value="&quot;mytransformers.tests.TestBert&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -122,20 +119,20 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/transformers" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mytransformers" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/transformers/tests.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/mytransformers/tests.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Python tests in tests.py" />
-        <item itemvalue="Python tests.Python tests for tests.TestBert" />
-        <item itemvalue="Python tests.Python tests for tests.TestBert.test_attention_shape" />
+        <item itemvalue="Python tests.Python tests for mytransformers.tests.TestBert" />
+        <item itemvalue="Python tests.Python tests for mytransformers.tests.TestBert" />
         <item itemvalue="Python.testing" />
       </list>
     </recent_temporary>
@@ -163,11 +160,20 @@
       <option name="project" value="LOCAL" />
       <updated>1748108903882</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="modular structure to give user independence to choose embedding and output layer">
+      <option name="closed" value="true" />
+      <created>1748109925137</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748109925137</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="modular structure to give user independence to choose embedding and output layer" />
+    <option name="LAST_COMMIT_MESSAGE" value="modular structure to give user independence to choose embedding and output layer" />
   </component>
 </project>
