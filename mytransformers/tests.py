@@ -1,4 +1,3 @@
-import torch
 import unittest
 from bert import *
 

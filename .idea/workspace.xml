@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97b04ab8-8d24-454b-bbc4-ed1d91928bca" name="Changes" comment="modular structure to give user independence to choose embedding and output layer">
+    <list default="true" id="97b04ab8-8d24-454b-bbc4-ed1d91928bca" name="Changes" comment="changing package name to reduce conflict with pypy transformers">
+      <change afterPath="$PROJECT_DIR$/ner/common_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ner/data_valid_tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ner/repair_json_files.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ontonotes/label.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ontonotes_repaired/label.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mytransformers/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/mytransformers/tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,21 +29,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ashwanikd0123"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ashwanikd0123&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ashwanikd0123/NLP.git",
-    "accountId": "e48d6e96-00d9-47bf-b83f-6a29c96130d2"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ashwanikd0123/NLP.git&quot;,
+    &quot;accountId&quot;: &quot;e48d6e96-00d9-47bf-b83f-6a29c96130d2&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2xYFpqW9tsinzmlm121JxV2cB7m" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -47,11 +54,15 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python tests.Python tests for tests.TestBert.executor": "Run",
     "Python tests.Python tests for tests.TestBert.test_attention_shape.executor": "Run",
+    "Python tests.Python tests in data_valid_tests.py.executor": "Run",
     "Python tests.Python tests in tests.py.executor": "Run",
+    "Python.data_validation.executor": "Run",
+    "Python.repair_json_files.executor": "Run",
     "Python.testing.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/Artificial Intelligence/PyCharmProjects/NLP/ontonotes_repaired"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -60,8 +71,8 @@
       <recent name="D:\Artificial Intelligence\PyCharmProjects\NLP\transformers" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in tests.py">
-    <configuration name="testing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests in data_valid_tests.py">
+    <configuration name="data_valid_tests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NLP" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -70,11 +81,33 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ner" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testing.py" />
+      <option name="SCRIPT_NAME" value="D:\Artificial Intelligence\PyCharmProjects\NLP\ner\data_valid_tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="repair_json_files" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NLP" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ner" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ner/repair_json_files.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -113,6 +146,21 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in data_valid_tests.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="NLP" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ner" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/ner/data_valid_tests.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests in tests.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="NLP" />
       <option name="ENV_FILES" value="" />
@@ -130,10 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests in data_valid_tests.py" />
+        <item itemvalue="Python.repair_json_files" />
+        <item itemvalue="Python.data_valid_tests" />
         <item itemvalue="Python tests.Python tests in tests.py" />
         <item itemvalue="Python tests.Python tests for mytransformers.tests.TestBert" />
-        <item itemvalue="Python tests.Python tests for mytransformers.tests.TestBert" />
-        <item itemvalue="Python.testing" />
       </list>
     </recent_temporary>
   </component>
@@ -168,12 +217,21 @@
       <option name="project" value="LOCAL" />
       <updated>1748109925137</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="changing package name to reduce conflict with pypy transformers">
+      <option name="closed" value="true" />
+      <created>1748110583403</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748110583403</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="modular structure to give user independence to choose embedding and output layer" />
-    <option name="LAST_COMMIT_MESSAGE" value="modular structure to give user independence to choose embedding and output layer" />
+    <MESSAGE value="changing package name to reduce conflict with pypy transformers" />
+    <option name="LAST_COMMIT_MESSAGE" value="changing package name to reduce conflict with pypy transformers" />
   </component>
 </project>
